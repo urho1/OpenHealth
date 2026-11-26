@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stat_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pulse_widget_bg_dark"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/stat_chip"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/icon_placeholder" />
+
+        <TextView
+            android:id="@+id/stat_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/unbounded"
+            android:textColor="#1488D6"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/stat_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:letterSpacing="0.09"
+            android:fontFamily="@font/spacegrotesk_semibold"
+            android:textColor="#8A8A93"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/stat_bar"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/icon_placeholder" />
+
+        <TextView
+            android:id="@+id/stat_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/plusjakarta_regular"
+            android:textColor="#8A8A93"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/stat_refresh"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_gravity="top|end"
+        android:src="@drawable/ic_ms_sync"
+        android:contentDescription="@string/icon_placeholder" />
+</FrameLayout>
